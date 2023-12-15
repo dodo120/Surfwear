@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique pour Professionnels</title>
+    <style>
+        /* Styles CSS pour mise en forme (à personnaliser selon vos préférences) */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+        .article img {
+            max-width: 100%;
+        }
+        select {
+            margin: 5px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <h1>Boutique pour Professionnels</h1>
+
+    <!-- Liste d'articles -->
+    <div class="article">
+        <img src="article1.jpg" alt="Article 1">
+        <h2 id="nom-article1">Nom de l'article 1</h2>
+        <p id="ref-article1">Référence: REF12345</p>
+        <p id="prix-article1">Prix: $25.99</p>
+        <label for="taille-article1">Taille:</label>
+        <select id="taille-article1">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <label for="quantite-article1">Quantité:</label>
+        <select id="quantite-article1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Ajoutez autant d'options que nécessaire -->
+        </select>
+        <button onclick="ajouterAuPanier('article1')">Ajouter au Panier</button>
+    </div>
+
+    <div class="article">
+        <img src="article2.jpg" alt="Article 2">
+        <h2 id="nom-article2">Nom de l'article 1</h2>
+        <p id="ref-article2">Référence: REF12345</p>
+        <p id="prix-article2">Prix: $25.99</p>
+        <label for="taille-article2">Taille:</label>
+        <select id="taille-article2">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <label for="quantite-article2">Quantité:</label>
+        <select id="quantite-article2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Ajoutez autant d'options que nécessaire -->
+        </select>
+        <button onclick="ajouterAuPanier('article2')">Ajouter au Panier</button>
+    </div>
+
+    <!-- Panier -->
+    <h2>Panier</h2>
+    <ul id="panier">
+    </ul>
+</body>
+</html>

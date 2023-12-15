@@ -1,0 +1,30 @@
+/* Ce fichier CSS reset est utilisé : https://cdn.githubraw.com/elad2412/the-new-css-reset/main/css/reset.css */
+
+/* Base */
+body {
+    margin: 0;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #212529;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+  }
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.fit-picture {
+    width: 100px;
+  }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
